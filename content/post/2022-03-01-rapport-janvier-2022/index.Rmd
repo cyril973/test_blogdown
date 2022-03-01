@@ -1,0 +1,23 @@
+---
+title: rapport Janvier 2022
+author: Cyril Le Borgne
+date: '2022-03-01'
+slug: rapport-janvier-2022
+categories: []
+tags: []
+---
+
+```{r import}
+library(tidyverse)
+library(glue)
+```
+
+```{r, results='asis'}
+
+fichiers <- list.files("../../../static/2022-01")
+
+for (i in 1:length(fichiers)) {
+  cat(paste0("[", fichiers[i], "](http://", fichiers[i], ")", "\n\n") )
+}
+
+```
