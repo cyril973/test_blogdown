@@ -17,7 +17,10 @@ library(glue)
 fichiers <- list.files("../../../static/2022-01")
 
 for (i in 1:length(fichiers)) {
-  cat(paste0("[", fichiers[i], "](http://", fichiers[i], ")", "\n\n") )
+  fichier <- fichiers[i]
+  dossier <- substr(fichier, 1, 7)
+  cat(paste0("[", fichiers[i], "](https://cdps-rapport.netlify.app/", 
+             dossier, "/", fichiers[i], ")", "\n\n") )
 }
 
 ```
