@@ -1,8 +1,8 @@
 ---
-title: rapport Janvier 2022
+title: Rapport Décembre 2021
 author: Cyril Le Borgne
-date: '2022-03-01'
-slug: rapport-janvier-2022
+date: '2021-12-03'
+slug: rapport-d-cembre-2021
 categories: []
 tags: []
 ---
@@ -23,9 +23,9 @@ library(tidyverse)
 library(glue)
 ```
 
-```{r, results='asis'}
+```{r, results='asis', echo=FALSE}
 
-fichiers <- list.files("../../../static/2022-01")
+fichiers <- list.files("../../../static/2021-12")
 
 
 for (i in 1:length(fichiers)) {

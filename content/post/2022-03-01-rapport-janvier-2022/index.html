@@ -10,28 +10,6 @@ tags: []
 <script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
 
 
-<pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --</code></pre>
-<pre><code>## v ggplot2 3.3.5     v purrr   0.3.4
-## v tibble  3.1.6     v dplyr   1.0.7
-## v tidyr   1.1.4     v stringr 1.4.0
-## v readr   2.1.1     v forcats 0.5.1</code></pre>
-<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>library(glue)</code></pre>
-<pre class="r"><code>fichiers &lt;- list.files(&quot;../../../static/2022-01&quot;)
-
-# for (i in 1:length(fichiers)) {
-#   cat(paste0(&quot;[&quot;, fichiers[i], &quot;](http://&quot;, fichiers[i], &quot;)&quot;, &quot;\n\n&quot;) )
-# }
-
-for (i in 1:length(fichiers)) {
-  fichier &lt;- fichiers[i]
-  dossier &lt;- substr(fichier, 1, 7)
-  cat(paste0(&quot;[&quot;, fichiers[i], &quot;](https://cdps-rapport.netlify.app/&quot;,
-             dossier, &quot;/&quot;, fichiers[i], &quot;)&quot;, &quot;\n\n&quot;) )
-}</code></pre>
 <p><a href="https://cdps-rapport.netlify.app/2022-01/2022-01%20-%20Antecum%20Pata%20-%20rapport%20mensuel.html">2022-01 - Antecum Pata - rapport mensuel.html</a></p>
 <p><a href="https://cdps-rapport.netlify.app/2022-01/2022-01%20-%20Apatou%20-%20rapport%20mensuel.html">2022-01 - Apatou - rapport mensuel.html</a></p>
 <p><a href="https://cdps-rapport.netlify.app/2022-01/2022-01%20-%20Awala%20-%20rapport%20mensuel.html">2022-01 - Awala - rapport mensuel.html</a></p>
